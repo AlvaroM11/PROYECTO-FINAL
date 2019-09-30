@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+<br>
+<br>
+<br>
+
+<table class="table table-bordered container">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Numero De Linea</th>
+            <th scope="col">Estado DeL Movil</th>
+            <th scope="col">Plan Del Movil </th>
+            <th scope="col">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let datos of personas">
+            <th scope="row">1</th>
+            <td>{{datos.id}}</td>
+            <td>{{datos.numerolinea}}</td>
+            <td>{{datos.estado}}</td>
+            <td>{{datos.tipo_plan}}</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              
+
+                <button class="btn btn-primary" type="submit" style="margin: 10px">Editar</button>
+                <button class="btn btn-danger" type="submit" style="margin: 10px">Eliminar</button>
+                
+
+          </tr>
+        
+        </tbody>
+      </table>
